@@ -25,10 +25,6 @@ class Cuba
     	::Handlebars::Context.new
     end
 
-    def safe_string(string)
-    	::Handlebars::SafeString.new(string)
-    end
-
     def read_file(template)
     	File.open(handle_path(template)).read
     end
